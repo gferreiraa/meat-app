@@ -9,7 +9,7 @@ import { RestaurantService } from 'app/restaurants/restaurants.services';
 })
 export class ReviewsComponent implements OnInit {
 
-  reviews: Observable<any>
+  reviews: Observable<any>;
 
   constructor( private restauranstsService: RestaurantService, private route: ActivatedRoute) { }
 
