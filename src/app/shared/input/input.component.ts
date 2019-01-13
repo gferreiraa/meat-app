@@ -31,7 +31,7 @@ export class InputComponent implements OnInit, AfterContentInit {
   }
 
   hasError() {
-    return this.input.invalid && (this.input.dirty || this.input.touched)
+    return this.input.invalid && (this.input.dirty || this.input.touched);
   }
 
 }
