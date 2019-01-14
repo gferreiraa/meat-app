@@ -4,7 +4,7 @@ import { ShoppingCartService } from './../restaurant-detail/shopping-cart/shoppi
 import { CartItem } from './../restaurant-detail/shopping-cart/cart-item.model';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Order , OrderItem} from './order.model';
+import { Order} from './order.model';
 
 @Injectable()
 export class OrderService {
@@ -40,7 +40,9 @@ export class OrderService {
     return this.http.post(`${MEAT_API}/orders`,
                           JSON.stringify(order),
                           new RequestOptions({headers: headers}))
-                    .map(response => response.json());
+                    .map(response => response.json())
+                    // tslint:disable-next-line:no-shadowed-variable
+                    .map(order => order.id);
   }
 
 }
