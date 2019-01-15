@@ -1,4 +1,4 @@
-      <!--INICIO DO CONTEUDO-->
+<!--INICIO DO CONTEUDO-->
 <!--INICIO DO CONTEUDO-->
 <section class="content-header">
 </section>
@@ -18,9 +18,6 @@
           <div class="row">
             <div class="col-xs-12 col-sm-9">
               <p class="lead">Seus Dados:</p>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-              <span class="help-block pull-right has-error-block" *ngIf="orderForm.hasError('emailsNotMatch')"><i class="fa fa-remove"></i> Email-s não conferem</span>
             </div>
 
             <div class="col-sm-6 col-xs-12">
@@ -86,9 +83,9 @@
             <div class="col-sm-6 col-xs-12">
               <p class="lead">Formas de Pagamento:</p>
 
-                <div class="form-group">
-                   <mt-radio [options]="paymentOptions" formControlName="paymentOption"></mt-radio>
-                </div>
+              <div class="form-group">
+                <mt-radio [options]="paymentOptions" formControlName="paymentOption"></mt-radio>
+             </div>
 
             </div>
             <!-- /.col -->
