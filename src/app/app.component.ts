@@ -1,4 +1,5 @@
-import {Component, OnInit} from "@angular/core"
+// tslint:disable-next-line:semicolon
+import {Component, OnInit} from '@angular/core'
 
 @Component({
   selector: 'mt-app',
@@ -6,7 +7,7 @@ import {Component, OnInit} from "@angular/core"
 })
 export class AppComponent implements OnInit {
 
-  content = 'Welcome do Meat App!'
+  content = 'Welcome do Meat App!';
 
   constructor() { }
 
