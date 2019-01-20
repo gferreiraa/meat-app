@@ -279,3 +279,12 @@ color: #dd4b39;
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
+.searchTag {
+  background-color: #dd4b39;
+  padding: 5px;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
+}
